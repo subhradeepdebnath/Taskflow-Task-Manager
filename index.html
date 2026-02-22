@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>TaskFlow</h1>
+    <div class="inputArea">
+    <input type = "text" id ="taskInput" placeholder="Enter your task">
+    <button class="addBtn" onclick="addTask()">Add Task</button>
+    <button class="clearBtn" onclick = "clearAllTasks()">Clear All</button>
+    </div>
+    <ul id = "taskList"></ul>
+    <p id="taskCount">Total Task: 0</p>
+    <p id="completedCount">Completed Task: 0</p>
+    <p id="pendingCount">Pending Tasks: 0</p>
+    <script src="script.js"></script>
+    </div>
+</body>
+</html>

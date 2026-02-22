@@ -1,0 +1,143 @@
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* main container */
+.container{
+    background: white;
+    padding: 20px;
+    width: 450px;
+    max-height: 80vh;      
+    overflow-y: auto; 
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* title */
+h1{
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* input box */
+#taskInput{
+    width: 65%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    outline: none;
+}
+/* task text */
+.task-text {
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* checkbox */
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
+/* buttons */
+button{
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* add button */
+.addBtn{
+    background: #4CAF50;
+    color: white;
+}
+
+.addBtn:hover{
+    background: #45a049;
+}
+
+/* clear button */
+.clearBtn{
+    background: #f44336;
+    color: white;
+}
+
+.clearBtn:hover{
+    background: #da190b;
+}
+
+/* task list */
+li{
+    list-style: none;
+    background: #f9f9f9;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    flex: 1;              
+    overflow-y: auto;      
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+
+}
+
+/* hover effect */
+li:hover{
+    transform: scale(1.02);
+}
+
+/* edit button */
+.editBtn{
+    background: #2196F3;
+    color: white;
+    margin: 5px;
+}
+
+.editBtn:hover{
+    background: #0b7dda;
+}
+
+/* delete button */
+.deleteBtn{
+    background: #f44336;
+    color: white;
+    margin: 5px;
+}
+
+.deleteBtn:hover{
+    background: #da190b;
+}
+
+/* checkbox */
+input[type="checkbox"]{
+    transform: scale(1.2);
+    margin: 10px;
+}
+
+/* counters */
+#taskCount,
+#completedCount,
+#pendingCount{
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* button container */
+.button-group {
+    display: flex;
+    gap: 8px;
+}
